@@ -4,7 +4,7 @@
 	const pageName = 'Svelte app'
 	import { onMount } from 'svelte'
 	import { getMemoList } from '../src/memo'
-	import './node_modules/bulma/'
+	import 'bulma/css/bulma.css'
 
 	let memoList = []
 
