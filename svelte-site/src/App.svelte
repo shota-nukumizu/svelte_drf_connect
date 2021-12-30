@@ -1,5 +1,17 @@
 <script>
 	export let name;
+
+	const pageName = 'Svelte app'
+	import { onMount } from 'svelte'
+	import { getMemoList } from '../src/memo'
+	import './node_modules/bulma/'
+
+	let memoList = []
+
+	onMount(async () => {
+		const res = await getMemoList()
+		memoList = res
+	})
 </script>
 
 <main>
@@ -7,7 +19,7 @@
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 	<hr>
 
-	<h3>SVelte App</h3>
+	<h3>{pageName}</h3>
 
 	<div class="card">
 		<div class="card-content">
