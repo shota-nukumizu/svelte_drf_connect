@@ -9,7 +9,7 @@
 
 	<h3>SVelte App</h3>
 
-	<div v-for="(msg, index) in messages" class="card" v-bind:id="'msg-card-'+index" v-on:click="showMessage(msg,index)" v-bind:data-preview-id="index">
+	<div class="card">
 		<div class="card-content">
 			<div class="msg-header">
 				

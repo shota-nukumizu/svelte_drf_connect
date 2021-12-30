@@ -27,3 +27,11 @@ const get = (url, request) => apiRequest('get', url, request)
 const post = (url, request) => apiRequest("post", url, request)
 
 const deleteRequest = (url, request) => apiRequest("delete", url, request)
+
+const API = {
+    get,
+    post,
+    delete: deleteRequest
+}
+
+export default API;
