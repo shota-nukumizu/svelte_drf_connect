@@ -1,11 +1,10 @@
-import Api from '../services/Api'
+import axios from 'axios'
 
 export const getMemoList = async () => {
     try {
-        const response = await Api.get('/memo-list')
-        return response.results
+        axios.get('http://127.0.0.1:8000/api/v1/memo-list/')
+            .then(res => { res.data })
     } catch (error) {
         console.log(error)
     }
 }
-
