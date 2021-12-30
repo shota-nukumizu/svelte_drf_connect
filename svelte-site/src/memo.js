@@ -1,4 +1,3 @@
-import App from './App.svelte';
 import Api from '../services/Api'
 
 export const getMemoList = async () => {
