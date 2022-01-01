@@ -3,7 +3,7 @@
 
 	const pageName = 'Svelte app'
 	import { onMount } from 'svelte'
-	import getMemoList from '../src/memo'
+	import getMemoList from '../src/memo.js'
 	import 'bulma/css/bulma.css'
 
 	let memoList = []
@@ -19,7 +19,7 @@
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 	<hr>
 
-	<h3>{pageName}</h3>
+	<h1>{pageName}</h1>
 
 	{#each memoList as item}
 	<div class="card">
@@ -33,6 +33,7 @@
 		</div>
 	</div>
 	{/each}
+
 </main>
 
 <style>
